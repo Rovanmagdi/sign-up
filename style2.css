@@ -1,71 +1,177 @@
-.home {
-  background-image: url(images/team-pic.jpg);
-  background-size: cover;
-  height: 100vh; /*بارتفاع المكان اللي واقفه عنده */
-  position: relative;
+
+/* **********************************login */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background: linear-gradient(to right, #b92b27, #1565c0) */
 }
 
-/* .home img {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-} */
 
-.img-content {
+.box {
+  width: 500px;
+  padding: 80px;
   position: absolute;
-  top: 40%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  /* text-align: center; */
-}
-
-.navbar-brand {
-  font-size: 30px;
-}
-
-.icon {
-  padding: 8px;
-  font-size: 1.7em;
-}
-.btn-submit {
-  margin: 10px auto;
-}
-
-.form-control {
-  height: calc(1.5em + 0.75rem + 10px);
-}
-
-/* .modal-footer {
-  justify-content: space-between;
-} */
-.social {
+  top: 50%;
+  left: 50%;
+  background: white; ;
   text-align: center;
+  transition: 0.25s;
+  height: 670px;
+ 
 }
-.social i {
-  font-size: 55px;
+a:hover{
+  color: #2ecc71;
 }
-.social i:nth-child(1) {
-  color: rgb(34, 34, 194);
-  margin-right: 100px;
+.btn{
+
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+ justify-items: center;
 }
-.social i:nth-child(2) {
-  color: rgb(226, 6, 6);
+.text{
+  margin:10px ;
 }
 
-img.avatar {
-  width: 30%;
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  width: 250px;
+  outline: none;
+  color: #000;
+  border-radius: 24px;
+  transition: 0.25s
+}
+
+.box h1 {
+  color:  #000;
+  text-transform: uppercase;
+  font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 300px;
+  border-color: #2ecc71
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: #000;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+  background: #2ecc71
+}
+
+.forgot {
+  text-decoration: underline
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+  background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+  color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
   border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px
 }
 
-#btn {
-  font-size: 20px;
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center
 }
 
-.dropdown-menu {
-  /* transform: scale3d(0, 1, 1); */
+.social-circle li a:hover i,
+.triggeredHover {
+  transform: rotate(360deg);
+  transition: all 0.2s
 }
 
-#dropdownMenuLink:hover::div.dropdown-menu {
-  /* transform: scale3d(1, 1, 1); */
+.social-circle i {
+  color: #000;
+  transition: all 0.8s;
+  transition: all 0.8s;
+}
+.txt1 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: center;
+  margin: 30px;
+}
+
+
+.txt2 {
+font-size: 14px;
+line-height: 1.5;
+color: #333333;
+text-transform: uppercase;
+}
+.txt3{
+text-align: center;
+margin-top: 100px;
+}
+#exampleModal{
+  padding-left: 20px;
+}
+.form-check-label{
+  color: #666666;
 }
